@@ -60,6 +60,7 @@ def load_data_from_json(json_file_path):
             labels_text.insert(tk.END, label + "\n\n")  
         labels_text.configure(state="disabled") 
 
+
 root = tk.Tk()
 root.title("Labelling Tool")
 
@@ -121,3 +122,5 @@ labels_file_path = "codetest2_test_unique.label"
 load_data_from_json(json_file_path)
 
 root.mainloop()
+
+
