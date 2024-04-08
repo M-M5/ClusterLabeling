@@ -33,12 +33,15 @@ def load_next_cluster_data():
         print("No more clusters to display.")
 
 def load_cluster_data(cluster_id):
+    global current_cluster_index, clusters_data
+
     with (open(sentences_file_path, "r")) as sentencesFile:
         sentences = sentencesFile.readlines()
 
     with (open(labels_file_path, "r")) as labelsFile:
         label_lines = [line.strip().split() for line in labelsFile]
 
+    # Clear the Treeview and Labels Text widget
     treeview.delete(*treeview.get_children())
     labels_text.configure(state="normal")
     labels_text.delete("1.0", tk.END)
@@ -49,11 +52,11 @@ def load_cluster_data(cluster_id):
         token = entry["Word"]
         sentence_id = int(entry["SentID"])
         token_id = int(entry["TokenID"])
-        if sentence_id < len(sentences) and token_id < len(label_lines[sentence_id]):
+        try:
             sentence = sentences[sentence_id]
             token_label = label_lines[sentence_id][token_id]
             treeview.insert("", tk.END, values=(token, token_label, sentence))
-        else:
+        except:
             print(f"Skipping entry: SentID {sentence_id}, TokenID {token_id} is out of range.")
 
     LLMlabels = cluster_data["Labels"]
