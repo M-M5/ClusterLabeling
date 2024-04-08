@@ -4,62 +4,86 @@ import json  # Import the json module to work with JSON files
 
 cluster_id = None
 
+cluster_id = None
+current_cluster_index = 0
+clusters_data = None
+
 def update_json_with_user_input(cluster_id, user_input):
     try:
-        with open(json_file_path, 'r+') as file:
+        with open(json_file_path, 'r') as file:
             data = json.load(file)
-            # Assuming you want to add the user input to a specific cluster's "UserInput"
-            if cluster_id in data:
-                data[cluster_id]["UserInput"] = user_input
-            else:
-                # If the cluster does not exist, create a new cluster with the user input
-                print("Error writing to JSON: Cluster ID not found")
-            # Move the cursor to the beginning of the file to overwrite it
-            file.seek(0)
-            # Write the modified data back to the file
+
+        if cluster_id in data:
+            data[cluster_id]["UserInput"] = user_input
+        else:
+            print(f"Error writing to JSON: Cluster ID {cluster_id} not found")
+
+        with open(json_file_path, 'w') as file:
             json.dump(data, file, indent=4)
-            # Truncate the file to the new size
-            file.truncate()
     except IOError as e:
         print("An error occurred while writing to the JSON file:", e)
 
-def on_enter_click():
-    cluster_id = "39"  # Example cluster ID, adjust as needed or get from user input
-    user_text = user_input.get()
-    print("User input to add to JSON:", user_text)
-    update_json_with_user_input(cluster_id, user_text)
-    # Optional: Clear the input field after adding the input to JSON
-    user_input.delete(0, tk.END)
+def load_next_cluster_data():
+    global current_cluster_index, clusters_data
+    cluster_ids = list(clusters_data.keys())
+    if current_cluster_index < len(cluster_ids):
+        current_cluster = cluster_ids[current_cluster_index]
+        load_cluster_data(current_cluster)
+    else:
+        print("No more clusters to display.")
 
-
-
-def load_data_from_json(json_file_path):
+def load_cluster_data(cluster_id):
     with (open(sentences_file_path, "r")) as sentencesFile:
         sentences = sentencesFile.readlines()
 
     with (open(labels_file_path, "r")) as labelsFile:
-        # labels = labelsFile.readlines()
+        label_lines = [line.strip().split() for line in labelsFile]
+
+    treeview.delete(*treeview.get_children())
+    labels_text.configure(state="normal")
+    labels_text.delete("1.0", tk.END)
+
+    cluster_data = clusters_data[cluster_id]
+    Entries = cluster_data["Entries"]
+    for entry in Entries:
+        token = entry["Word"]
+        sentence_id = int(entry["SentID"])
+        token_id = int(entry["TokenID"])
+        if sentence_id < len(sentences) and token_id < len(label_lines[sentence_id]):
+            sentence = sentences[sentence_id]
+            token_label = label_lines[sentence_id][token_id]
+            treeview.insert("", tk.END, values=(token, token_label, sentence))
+        else:
+            print(f"Skipping entry: SentID {sentence_id}, TokenID {token_id} is out of range.")
+
+    LLMlabels = cluster_data["Labels"]
+    for label in LLMlabels[:3]:
+        labels_text.insert(tk.END, label + "\n\n")
+    labels_text.configure(state="disabled")
+
+def on_enter_click():
+    global current_cluster_index
+    current_cluster = list(clusters_data.keys())[current_cluster_index]
+    user_text = user_input.get()
+    print("User input to add to JSON:", user_text)
+    update_json_with_user_input(current_cluster, user_text)
+    user_input.delete(0, tk.END)
+    current_cluster_index += 1
+    load_next_cluster_data()
+
+
+def load_data_from_json(json_file_path):
+    global clusters_data
+    with (open(sentences_file_path, "r")) as sentencesFile:
+        sentences = sentencesFile.readlines()
+
+    with (open(labels_file_path, "r")) as labelsFile:
         label_lines = [line.strip().split() for line in labelsFile]
 
     with open(json_file_path, "r") as jsonFile:
-        data = json.load(jsonFile)
-        clusterNum = next(iter(data))
-        cluster_id = clusterNum
-        Entries = data[clusterNum]["Entries"]
-        for entry in Entries:
-            token = entry["Word"]
-            sentence = sentences[int(entry["SentID"])]
-            print(entry["SentID"], ":", entry["TokenID"])
-            token_label = label_lines[int(entry["SentID"])][int(entry["TokenID"])]
-            treeview.insert("", tk.END, values=(token,token_label, sentence))
+        clusters_data = json.load(jsonFile)
 
-        LLMlabels = data[clusterNum]["Labels"]
-        labels_text.configure(state="normal")  
-        labels_text.delete("1.0", tk.END)  
-        for label in LLMlabels[:3]:  
-            labels_text.insert(tk.END, label + "\n\n")  
-        labels_text.configure(state="disabled") 
-
+    load_next_cluster_data()
 
 root = tk.Tk()
 root.title("Labelling Tool")
