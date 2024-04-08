@@ -1,0 +1,2276 @@
+{
+    "39": {
+        "Entries": [
+            {
+                "Word": "returnBuffer",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "0"
+            },
+            {
+                "Word": "returnBuffer",
+                "WordID": "2",
+                "SentID": "1",
+                "TokenID": "0"
+            },
+            {
+                "Word": "returnBuffer",
+                "WordID": "3",
+                "SentID": "2",
+                "TokenID": "0"
+            },
+            {
+                "Word": "returnBuffer",
+                "WordID": "4",
+                "SentID": "3",
+                "TokenID": "0"
+            },
+            {
+                "Word": "returnBuffer",
+                "WordID": "5",
+                "SentID": "4",
+                "TokenID": "0"
+            },
+            {
+                "Word": "returnBuffer",
+                "WordID": "6",
+                "SentID": "5",
+                "TokenID": "0"
+            },
+            {
+                "Word": "returnBuffer",
+                "WordID": "7",
+                "SentID": "6",
+                "TokenID": "1"
+            }
+        ],
+        "Labels": [
+            "\"Repeated Use of Return Buffer\"",
+            "The common trait for these code tokens is that they are all identical, which suggests that they are part of the same function or method. Therefore, an appropriate label for this cluster could be \"Function Return Statements\".",
+            "The common trait among these items is that they are all named \"returnBuffer\". It suggests they might be functions or variables used in programming to return a buffer, which is a temporary storage area. However, without further context, it's difficult to provide more detailed information."
+        ]
+    },
+    "5": {
+        "Entries": [
+            {
+                "Word": ".",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "2",
+                "SentID": "1",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "5",
+                "SentID": "2",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "6",
+                "SentID": "3",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "7",
+                "SentID": "4",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "10",
+                "SentID": "5",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "11",
+                "SentID": "6",
+                "TokenID": "2"
+            },
+            {
+                "Word": ".",
+                "WordID": "12",
+                "SentID": "8",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "36",
+                "SentID": "26",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "38",
+                "SentID": "31",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "39",
+                "SentID": "31",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "44",
+                "SentID": "37",
+                "TokenID": "1"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Marks\"",
+            "Since all the provided code tokens are \".\", they can be labeled as \"Dot Operator\". This operator is commonly used for accessing properties or methods of an object, or as a decimal point in numerical values in many programming languages.",
+            "The common trait among these items is that they are all punctuation marks, specifically periods or full stops, and ellipses."
+        ]
+    },
+    "19": {
+        "Entries": [
+            {
+                "Word": "append",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "2"
+            },
+            {
+                "Word": "append",
+                "WordID": "2",
+                "SentID": "1",
+                "TokenID": "2"
+            },
+            {
+                "Word": "append",
+                "WordID": "3",
+                "SentID": "2",
+                "TokenID": "2"
+            },
+            {
+                "Word": "append",
+                "WordID": "4",
+                "SentID": "3",
+                "TokenID": "2"
+            },
+            {
+                "Word": "append",
+                "WordID": "5",
+                "SentID": "4",
+                "TokenID": "2"
+            },
+            {
+                "Word": "append",
+                "WordID": "6",
+                "SentID": "5",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Appends\"",
+            "The common trait for these code tokens is that they all represent a similar operation in programming, specifically the action of adding an element to the end of a list or other collection. \n\nLabel: \"List Append Operations\"",
+            "The common trait among these items is that they are all the same action, \"append\". This is commonly used in programming to add or attach something to the end of a list or array."
+        ]
+    },
+    "6": {
+        "Entries": [
+            {
+                "Word": "(",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "2",
+                "SentID": "1",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "3",
+                "SentID": "2",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "4",
+                "SentID": "3",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "5",
+                "SentID": "4",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "6",
+                "SentID": "5",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "9",
+                "SentID": "8",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "25",
+                "SentID": "26",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "27",
+                "SentID": "31",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "31",
+                "SentID": "37",
+                "TokenID": "3"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Opening Parentheses\"",
+            "Based on the provided code tokens, the common trait is that they are all \"Opening Parentheses\". Therefore, the label for this cluster can be \"Opening Parentheses\".",
+            "The common trait among these items is that they are all opening parentheses."
+        ]
+    },
+    "23": {
+        "Entries": [
+            {
+                "Word": "minParam",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "4"
+            },
+            {
+                "Word": "maxParam",
+                "WordID": "1",
+                "SentID": "2",
+                "TokenID": "4"
+            },
+            {
+                "Word": "stepFactorParam",
+                "WordID": "1",
+                "SentID": "3",
+                "TokenID": "4"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "1",
+                "SentID": "7",
+                "TokenID": "6"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "2",
+                "SentID": "8",
+                "TokenID": "0"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "3",
+                "SentID": "10",
+                "TokenID": "0"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "4",
+                "SentID": "11",
+                "TokenID": "6"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "5",
+                "SentID": "13",
+                "TokenID": "0"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "6",
+                "SentID": "14",
+                "TokenID": "6"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "7",
+                "SentID": "15",
+                "TokenID": "0"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "8",
+                "SentID": "17",
+                "TokenID": "6"
+            },
+            {
+                "Word": "userParam",
+                "WordID": "9",
+                "SentID": "19",
+                "TokenID": "6"
+            },
+            {
+                "Word": "existingPasswordParam",
+                "WordID": "1",
+                "SentID": "22",
+                "TokenID": "1"
+            },
+            {
+                "Word": "newPasswordParam",
+                "WordID": "1",
+                "SentID": "23",
+                "TokenID": "1"
+            },
+            {
+                "Word": "confirmNewPasswordParam",
+                "WordID": "1",
+                "SentID": "24",
+                "TokenID": "1"
+            },
+            {
+                "Word": "userToDeleteParam",
+                "WordID": "1",
+                "SentID": "35",
+                "TokenID": "1"
+            },
+            {
+                "Word": "forcefullyDeleteParam",
+                "WordID": "1",
+                "SentID": "36",
+                "TokenID": "1"
+            },
+            {
+                "Word": "userToDeleteParam",
+                "WordID": "2",
+                "SentID": "37",
+                "TokenID": "0"
+            },
+            {
+                "Word": "userToDeleteParam",
+                "WordID": "3",
+                "SentID": "38",
+                "TokenID": "8"
+            }
+        ],
+        "Labels": [
+            "\"User Management and Parameter Configuration\"",
+            "Sure, based on the code tokens provided, they can be grouped and labelled as follows:\n\n1. Parameter Tokens: minParam, maxParam, stepFactorParam\n2. User-related Tokens: userParam (repeated many times)\n3. Password-related Tokens: existingPasswordParam, newPasswordParam, confirmNewPasswordParam\n4. User Deletion-related Tokens: userToDeleteParam (repeated), forcefullyDeleteParam\n\nThese labels reflect the common traits or functionalities suggested by the code tokens within each group",
+            "The common trait among these items is that they all appear to be parameters in a computer program or function, likely used for configuring or controlling behavior. Specifically, they seem to be associated with user management and password control functionalities."
+        ]
+    },
+    "24": {
+        "Entries": [
+            {
+                "Word": ")",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "5"
+            },
+            {
+                "Word": ")",
+                "WordID": "2",
+                "SentID": "1",
+                "TokenID": "9"
+            },
+            {
+                "Word": ")",
+                "WordID": "3",
+                "SentID": "2",
+                "TokenID": "5"
+            },
+            {
+                "Word": ")",
+                "WordID": "4",
+                "SentID": "3",
+                "TokenID": "5"
+            },
+            {
+                "Word": ")",
+                "WordID": "5",
+                "SentID": "4",
+                "TokenID": "9"
+            },
+            {
+                "Word": ")",
+                "WordID": "6",
+                "SentID": "5",
+                "TokenID": "5"
+            },
+            {
+                "Word": ")",
+                "WordID": "9",
+                "SentID": "8",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "31",
+                "SentID": "26",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "34",
+                "SentID": "31",
+                "TokenID": "9"
+            },
+            {
+                "Word": ")",
+                "WordID": "39",
+                "SentID": "37",
+                "TokenID": "7"
+            }
+        ],
+        "Labels": [
+            "\"Closing Parentheses Sequence\"",
+            "Given that all the code tokens are identical in this case, they can be clustered together and labeled as \"Closing Parentheses\".",
+            "All of these items are right parentheses."
+        ]
+    },
+    "22": {
+        "Entries": [
+            {
+                "Word": ";",
+                "WordID": "1",
+                "SentID": "0",
+                "TokenID": "6"
+            },
+            {
+                "Word": ";",
+                "WordID": "2",
+                "SentID": "1",
+                "TokenID": "10"
+            },
+            {
+                "Word": ";",
+                "WordID": "3",
+                "SentID": "2",
+                "TokenID": "6"
+            },
+            {
+                "Word": ";",
+                "WordID": "4",
+                "SentID": "3",
+                "TokenID": "6"
+            },
+            {
+                "Word": ";",
+                "WordID": "5",
+                "SentID": "4",
+                "TokenID": "10"
+            },
+            {
+                "Word": ";",
+                "WordID": "6",
+                "SentID": "5",
+                "TokenID": "6"
+            },
+            {
+                "Word": ";",
+                "WordID": "7",
+                "SentID": "6",
+                "TokenID": "6"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Semicolons\"",
+            "The cluster of code tokens can be labeled as \"Statement Terminators\" or \"End of Statement Symbols\".",
+            "All of these items are semicolons (;). They share the common trait of being a punctuation mark used in writing."
+        ]
+    },
+    "37": {
+        "Entries": [
+            {
+                "Word": "FieldMetaData",
+                "WordID": "1",
+                "SentID": "1",
+                "TokenID": "4"
+            },
+            {
+                "Word": "FieldMetaData",
+                "WordID": "2",
+                "SentID": "4",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"Metadata Management\"",
+            "Label: \"Metadata Field Objects\"",
+            "The common trait among the items FieldMetaData and FieldMetaData is that they both refer to data about data, or metadata, in a database or dataset. More specifically, they refer to information about the properties or attributes of a field within a database or dataset. This is often used in programming and data management to handle data more effectively."
+        ]
+    },
+    "38": {
+        "Entries": [
+            {
+                "Word": ".",
+                "WordID": "3",
+                "SentID": "1",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "4",
+                "SentID": "1",
+                "TokenID": "7"
+            },
+            {
+                "Word": ".",
+                "WordID": "8",
+                "SentID": "4",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "9",
+                "SentID": "4",
+                "TokenID": "7"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Marks\"",
+            "As an AI model, I would need more specific input to provide accurate labels. The dots provided (., ., ., .) don't represent actual code tokens that can be analyzed or grouped. Please provide a list of actual code tokens for accurate labeling.",
+            "The common trait among these items is that they are all punctuation marks, specifically periods and ellipsis."
+        ]
+    },
+    "43": {
+        "Entries": [
+            {
+                "Word": "Decimal",
+                "WordID": "1",
+                "SentID": "1",
+                "TokenID": "6"
+            },
+            {
+                "Word": "Decimal",
+                "WordID": "2",
+                "SentID": "4",
+                "TokenID": "6"
+            }
+        ],
+        "Labels": [
+            "\"Decimal Number Handling\"",
+            "Label: Numerical Data Types",
+            "The common trait among these items: Decimal and Decimal, is that they both refer to a system of numbers based on the number ten. They are used in mathematics and represent fractions that are expressed as points followed by digits."
+        ]
+    },
+    "18": {
+        "Entries": [
+            {
+                "Word": "MAX",
+                "WordID": "1",
+                "SentID": "1",
+                "TokenID": "8"
+            },
+            {
+                "Word": "PREFIX",
+                "WordID": "1",
+                "SentID": "4",
+                "TokenID": "8"
+            }
+        ],
+        "Labels": [
+            "\"Maximum Value and Prefix Settings\"",
+            "These code tokens can be labeled as \"Operator and Function Tokens\". MAX is typically a function used to get the maximum value among a set of values, while PREFIX is often used in reference to prefix operators or operations in programming.",
+            "A common trait among these items, MAX and PREFIX, is that they both are commonly used terms in the field of computer science or programming. \n\nMAX usually refers to a function or command in programming that returns the maximum value from a set of values. \n\nPREFIX, on the other hand, is often used to refer to an initial part of a string in computing (as in \"prefix code\" or \"prefix notation\"). It can also be used to indicate a prefix in data structures like Prefix Trees ("
+        ]
+    },
+    "14": {
+        "Entries": [
+            {
+                "Word": "prefix",
+                "WordID": "1",
+                "SentID": "5",
+                "TokenID": "4"
+            },
+            {
+                "Word": "existingPassword",
+                "WordID": "1",
+                "SentID": "27",
+                "TokenID": "1"
+            },
+            {
+                "Word": "newPassword",
+                "WordID": "1",
+                "SentID": "28",
+                "TokenID": "1"
+            },
+            {
+                "Word": "confirmNewPassword",
+                "WordID": "1",
+                "SentID": "29",
+                "TokenID": "1"
+            },
+            {
+                "Word": "changePassword",
+                "WordID": "1",
+                "SentID": "33",
+                "TokenID": "8"
+            }
+        ],
+        "Labels": [
+            "\"Password Update Functionality\"",
+            "Based on the provided code tokens, they can be categorized as follows:\n\n1. Variable Identifiers: existingPassword, newPassword, confirmNewPassword\n2. Function Name: changePassword\n3. Modifier: prefix",
+            "A common trait among these items is that they all are related to user authentication or password management in computer systems or programming terminology. They are often seen as variable names or fields in a form related to changing a user's password."
+        ]
+    },
+    "2": {
+        "Entries": [
+            {
+                "Word": "return",
+                "WordID": "1",
+                "SentID": "6",
+                "TokenID": "0"
+            },
+            {
+                "Word": "}",
+                "WordID": "1",
+                "SentID": "7",
+                "TokenID": "0"
+            },
+            {
+                "Word": "return",
+                "WordID": "2",
+                "SentID": "9",
+                "TokenID": "0"
+            },
+            {
+                "Word": "}",
+                "WordID": "2",
+                "SentID": "11",
+                "TokenID": "0"
+            },
+            {
+                "Word": "return",
+                "WordID": "3",
+                "SentID": "12",
+                "TokenID": "0"
+            },
+            {
+                "Word": "}",
+                "WordID": "3",
+                "SentID": "14",
+                "TokenID": "0"
+            },
+            {
+                "Word": "}",
+                "WordID": "4",
+                "SentID": "17",
+                "TokenID": "0"
+            },
+            {
+                "Word": "}",
+                "WordID": "5",
+                "SentID": "19",
+                "TokenID": "0"
+            },
+            {
+                "Word": "}",
+                "WordID": "6",
+                "SentID": "21",
+                "TokenID": "0"
+            },
+            {
+                "Word": "return",
+                "WordID": "4",
+                "SentID": "38",
+                "TokenID": "0"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Code Block Closure and Returns\"",
+            "Based on the given code tokens, I would suggest the following labels for their clusters:\n\n1. Cluster 1 (return): \"Return Statements\" \n2. Cluster 2 (}): \"Closing Braces\"",
+            "The common trait among these items is that they are all used in programming. More specifically, they are often seen in JavaScript or other C-based languages. \"Return\" is a statement used to end the execution of a function and send its result back to the caller. \"}\" is a closing curly bracket used to denote the end of a block of code or object definition."
+        ]
+    },
+    "35": {
+        "Entries": [
+            {
+                "Word": "toString",
+                "WordID": "1",
+                "SentID": "6",
+                "TokenID": "3"
+            },
+            {
+                "Word": "toString",
+                "WordID": "2",
+                "SentID": "31",
+                "TokenID": "6"
+            }
+        ],
+        "Labels": [
+            "\"Conversion to String\"",
+            "Cluster Label: String Conversion Methods",
+            "The common trait among these items: toString, toString is that they are both methods used in programming. Specifically, they are usually used to convert an object into a string."
+        ]
+    },
+    "32": {
+        "Entries": [
+            {
+                "Word": "(",
+                "WordID": "7",
+                "SentID": "6",
+                "TokenID": "4"
+            },
+            {
+                "Word": "(",
+                "WordID": "24",
+                "SentID": "25",
+                "TokenID": "5"
+            },
+            {
+                "Word": "(",
+                "WordID": "26",
+                "SentID": "30",
+                "TokenID": "5"
+            },
+            {
+                "Word": "(",
+                "WordID": "28",
+                "SentID": "31",
+                "TokenID": "7"
+            }
+        ],
+        "Labels": [
+            "\"Nested Parentheses\"",
+            "Label: \"Opening Parentheses\"",
+            "A common trait among these items is that they are all open parentheses."
+        ]
+    },
+    "44": {
+        "Entries": [
+            {
+                "Word": ")",
+                "WordID": "7",
+                "SentID": "6",
+                "TokenID": "5"
+            },
+            {
+                "Word": ")",
+                "WordID": "30",
+                "SentID": "25",
+                "TokenID": "6"
+            },
+            {
+                "Word": ")",
+                "WordID": "32",
+                "SentID": "30",
+                "TokenID": "6"
+            },
+            {
+                "Word": ")",
+                "WordID": "33",
+                "SentID": "31",
+                "TokenID": "8"
+            }
+        ],
+        "Labels": [
+            "\"Closing Parentheses Sequence\"",
+            "Since all the code tokens are the same, which is the closing parenthesis symbol \")\", they can be labeled as \"Closing Parenthesis.\"",
+            "The common trait among these items is that they are all closing parentheses."
+        ]
+    },
+    "16": {
+        "Entries": [
+            {
+                "Word": "public",
+                "WordID": "1",
+                "SentID": "7",
+                "TokenID": "1"
+            },
+            {
+                "Word": "public",
+                "WordID": "2",
+                "SentID": "11",
+                "TokenID": "1"
+            },
+            {
+                "Word": "public",
+                "WordID": "3",
+                "SentID": "14",
+                "TokenID": "1"
+            },
+            {
+                "Word": "public",
+                "WordID": "4",
+                "SentID": "17",
+                "TokenID": "1"
+            },
+            {
+                "Word": "public",
+                "WordID": "5",
+                "SentID": "19",
+                "TokenID": "1"
+            },
+            {
+                "Word": "public",
+                "WordID": "6",
+                "SentID": "21",
+                "TokenID": "1"
+            },
+            {
+                "Word": "public",
+                "WordID": "7",
+                "SentID": "34",
+                "TokenID": "1"
+            }
+        ],
+        "Labels": [
+            "\"Repetition of Public Access Modifier\"",
+            "Label: \"Access Modifiers\"",
+            "The common trait among these items is that they are all labeled as \"public.\""
+        ]
+    },
+    "0": {
+        "Entries": [
+            {
+                "Word": "User",
+                "WordID": "1",
+                "SentID": "7",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "2",
+                "SentID": "7",
+                "TokenID": "5"
+            },
+            {
+                "Word": "User",
+                "WordID": "5",
+                "SentID": "11",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "6",
+                "SentID": "11",
+                "TokenID": "5"
+            },
+            {
+                "Word": "User",
+                "WordID": "9",
+                "SentID": "14",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "10",
+                "SentID": "14",
+                "TokenID": "5"
+            },
+            {
+                "Word": "User",
+                "WordID": "12",
+                "SentID": "17",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "13",
+                "SentID": "17",
+                "TokenID": "5"
+            },
+            {
+                "Word": "User",
+                "WordID": "15",
+                "SentID": "19",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "16",
+                "SentID": "19",
+                "TokenID": "5"
+            },
+            {
+                "Word": "User",
+                "WordID": "18",
+                "SentID": "21",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "22",
+                "SentID": "34",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"User Repetition\"",
+            "Label: Identifier - User",
+            "The common trait among these items is that they are all identified as \"User.\""
+        ]
+    },
+    "27": {
+        "Entries": [
+            {
+                "Word": "createUser",
+                "WordID": "1",
+                "SentID": "7",
+                "TokenID": "3"
+            },
+            {
+                "Word": "updateUser",
+                "WordID": "1",
+                "SentID": "11",
+                "TokenID": "3"
+            },
+            {
+                "Word": "activateUser",
+                "WordID": "1",
+                "SentID": "14",
+                "TokenID": "3"
+            },
+            {
+                "Word": "deActivateUser",
+                "WordID": "1",
+                "SentID": "17",
+                "TokenID": "3"
+            },
+            {
+                "Word": "incrementInvalidLoginForUser",
+                "WordID": "1",
+                "SentID": "19",
+                "TokenID": "3"
+            },
+            {
+                "Word": "changePasswordForLoggedInUser",
+                "WordID": "1",
+                "SentID": "21",
+                "TokenID": "3"
+            },
+            {
+                "Word": "deleteUser",
+                "WordID": "1",
+                "SentID": "34",
+                "TokenID": "3"
+            }
+        ],
+        "Labels": [
+            "User Management Functions",
+            "Cluster 1: User Creation and Modification\n- createUser\n- updateUser\n\nCluster 2: User Activation and Deactivation\n- activateUser\n- deActivateUser\n\nCluster 3: User Login Management\n- incrementInvalidLoginForUser\n- changePasswordForLoggedInUser\n\nCluster 4: User Deletion\n- deleteUser",
+            "All these items are related to user management operations in a software or web application. They are methods/functions used to perform specific tasks such as creating, updating, activating, deactivating, tracking invalid login attempts, changing passwords, and deleting users."
+        ]
+    },
+    "45": {
+        "Entries": [
+            {
+                "Word": "(",
+                "WordID": "8",
+                "SentID": "7",
+                "TokenID": "4"
+            },
+            {
+                "Word": "(",
+                "WordID": "13",
+                "SentID": "11",
+                "TokenID": "4"
+            },
+            {
+                "Word": "(",
+                "WordID": "17",
+                "SentID": "14",
+                "TokenID": "4"
+            },
+            {
+                "Word": "(",
+                "WordID": "19",
+                "SentID": "17",
+                "TokenID": "4"
+            },
+            {
+                "Word": "(",
+                "WordID": "21",
+                "SentID": "19",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"Nesting Parentheses\"",
+            "Label: \"Opening Parentheses\"",
+            "The common trait among these items is that they are all open parentheses."
+        ]
+    },
+    "3": {
+        "Entries": [
+            {
+                "Word": ")",
+                "WordID": "8",
+                "SentID": "7",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "13",
+                "SentID": "11",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "17",
+                "SentID": "14",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "21",
+                "SentID": "17",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "25",
+                "SentID": "19",
+                "TokenID": "7"
+            },
+            {
+                "Word": ")",
+                "WordID": "29",
+                "SentID": "24",
+                "TokenID": "2"
+            },
+            {
+                "Word": ")",
+                "WordID": "38",
+                "SentID": "36",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"Closure of Multiple Functions or Statements\"",
+            "As all the code tokens are identical - \")\", these can be labeled as \"Closing Parentheses\".",
+            "A common trait among these items is that they are all closing parentheses."
+        ]
+    },
+    "31": {
+        "Entries": [
+            {
+                "Word": "setServiceTicket",
+                "WordID": "1",
+                "SentID": "8",
+                "TokenID": "2"
+            },
+            {
+                "Word": "serviceTicket",
+                "WordID": "1",
+                "SentID": "8",
+                "TokenID": "6"
+            },
+            {
+                "Word": "setServiceTicket",
+                "WordID": "2",
+                "SentID": "26",
+                "TokenID": "2"
+            },
+            {
+                "Word": "serviceTicket",
+                "WordID": "2",
+                "SentID": "26",
+                "TokenID": "6"
+            },
+            {
+                "Word": "setServiceTicket",
+                "WordID": "3",
+                "SentID": "37",
+                "TokenID": "2"
+            },
+            {
+                "Word": "serviceTicket",
+                "WordID": "3",
+                "SentID": "37",
+                "TokenID": "6"
+            }
+        ],
+        "Labels": [
+            "\"Service Ticket Management\"",
+            "Based on their common traits, these clusters of code tokens can be labeled as \"Method Invocations\" and \"Variable References\". \n\nThe \"setServiceTicket\" tokens, which seem to be methods used for setting a value (typically used in object-oriented programming), can be labeled as \"Method Invocations\". \n\nOn the other hand, the \"serviceTicket\" tokens, which seem to be variables or objects being manipulated in the code, can be labeled as \"Variable References\".",
+            "The common trait among these items is that they all appear to be related to service ticketing, likely in a programming or software context. They are probably methods in a class or object, with 'setServiceTicket' being a function used to assign a value to the 'serviceTicket' property."
+        ]
+    },
+    "1": {
+        "Entries": [
+            {
+                "Word": "this",
+                "WordID": "1",
+                "SentID": "8",
+                "TokenID": "4"
+            },
+            {
+                "Word": "this",
+                "WordID": "2",
+                "SentID": "9",
+                "TokenID": "4"
+            },
+            {
+                "Word": "this",
+                "WordID": "3",
+                "SentID": "12",
+                "TokenID": "4"
+            },
+            {
+                "Word": "this",
+                "WordID": "4",
+                "SentID": "26",
+                "TokenID": "4"
+            },
+            {
+                "Word": "this",
+                "WordID": "5",
+                "SentID": "37",
+                "TokenID": "4"
+            },
+            {
+                "Word": "this",
+                "WordID": "6",
+                "SentID": "38",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"Repetitive Use of 'this' Keyword\"",
+            "Since all the code tokens are \"this\", these can be labeled as \"Reference Keywords\". This is because in many programming languages like JavaScript and Java, \"this\" is a keyword that refers to the current instance of the class.",
+            "As an AI, I'm unable to physically see or understand the context of \"this\" in your statement. Could you please specify what these items are? Then I'd be happy to help identify a common trait."
+        ]
+    },
+    "49": {
+        "Entries": [
+            {
+                "Word": ".",
+                "WordID": "13",
+                "SentID": "8",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "37",
+                "SentID": "26",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "45",
+                "SentID": "37",
+                "TokenID": "5"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Marks\"",
+            "As an AI, I'm unable to directly process or view a list of code tokens from your query as it seems like you've used \".\" as placeholders instead of providing actual code tokens. However, I can explain the general process.\n\nWhen labeling clusters of code tokens based on their common traits, you would typically look for patterns or functionalities that are shared among them. For example:\n\n1. Mathematical Operations: This could include tokens like \"+\", \"-\", \"*\", \"/\", etc.\n2. Logical Operations: Tokens like \"",
+            "All of these items are punctuation marks used in written language. Specifically, they are periods (.) and ellipses (..), both of which are used to indicate the end of a sentence or a pause in speech."
+        ]
+    },
+    "15": {
+        "Entries": [
+            {
+                "Word": ";",
+                "WordID": "8",
+                "SentID": "8",
+                "TokenID": "8"
+            },
+            {
+                "Word": ";",
+                "WordID": "9",
+                "SentID": "10",
+                "TokenID": "15"
+            },
+            {
+                "Word": ";",
+                "WordID": "10",
+                "SentID": "13",
+                "TokenID": "15"
+            },
+            {
+                "Word": ";",
+                "WordID": "11",
+                "SentID": "16",
+                "TokenID": "13"
+            },
+            {
+                "Word": ";",
+                "WordID": "12",
+                "SentID": "18",
+                "TokenID": "13"
+            },
+            {
+                "Word": ";",
+                "WordID": "13",
+                "SentID": "20",
+                "TokenID": "13"
+            },
+            {
+                "Word": ";",
+                "WordID": "15",
+                "SentID": "26",
+                "TokenID": "8"
+            },
+            {
+                "Word": ";",
+                "WordID": "17",
+                "SentID": "31",
+                "TokenID": "10"
+            },
+            {
+                "Word": ";",
+                "WordID": "18",
+                "SentID": "33",
+                "TokenID": "13"
+            },
+            {
+                "Word": ";",
+                "WordID": "19",
+                "SentID": "37",
+                "TokenID": "8"
+            }
+        ],
+        "Labels": [
+            "\"Repeated Semicolons\"",
+            "Label: \"Semicolon Tokens\"",
+            "All of these items are semicolons."
+        ]
+    },
+    "9": {
+        "Entries": [
+            {
+                "Word": "new",
+                "WordID": "1",
+                "SentID": "9",
+                "TokenID": "1"
+            },
+            {
+                "Word": "new",
+                "WordID": "2",
+                "SentID": "12",
+                "TokenID": "1"
+            },
+            {
+                "Word": "new",
+                "WordID": "3",
+                "SentID": "25",
+                "TokenID": "3"
+            },
+            {
+                "Word": "new",
+                "WordID": "4",
+                "SentID": "30",
+                "TokenID": "3"
+            },
+            {
+                "Word": "new",
+                "WordID": "5",
+                "SentID": "38",
+                "TokenID": "1"
+            }
+        ],
+        "Labels": [
+            "\"Creation/Initialization\"",
+            "The label for this cluster of code tokens can be \"Object Instantiation Tokens\".",
+            "The common trait among these items is that they are all described as \"new\"."
+        ]
+    },
+    "20": {
+        "Entries": [
+            {
+                "Word": "User",
+                "WordID": "3",
+                "SentID": "9",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "7",
+                "SentID": "12",
+                "TokenID": "2"
+            },
+            {
+                "Word": "User",
+                "WordID": "19",
+                "SentID": "25",
+                "TokenID": "0"
+            },
+            {
+                "Word": "User",
+                "WordID": "20",
+                "SentID": "25",
+                "TokenID": "4"
+            },
+            {
+                "Word": "User",
+                "WordID": "23",
+                "SentID": "35",
+                "TokenID": "0"
+            },
+            {
+                "Word": "User",
+                "WordID": "24",
+                "SentID": "38",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"User Management\"",
+            "Given that all the tokens are \"User\", I would label this cluster as \"Identifier/User Variable\".",
+            "The common trait among these items is that they are all identified as \"User\"."
+        ]
+    },
+    "41": {
+        "Entries": [
+            {
+                "Word": "(",
+                "WordID": "10",
+                "SentID": "9",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "14",
+                "SentID": "12",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "32",
+                "SentID": "38",
+                "TokenID": "3"
+            },
+            {
+                "Word": "(",
+                "WordID": "33",
+                "SentID": "38",
+                "TokenID": "7"
+            }
+        ],
+        "Labels": [
+            "\"Nested Parentheses\"",
+            "These code tokens can be labeled as \"Opening Parenthesis\".",
+            "The common trait among these items is that they are all opening parentheses."
+        ]
+    },
+    "28": {
+        "Entries": [
+            {
+                "Word": ".",
+                "WordID": "14",
+                "SentID": "9",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "19",
+                "SentID": "12",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "46",
+                "SentID": "38",
+                "TokenID": "5"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Marks\"",
+            "It seems like the code tokens you provided are all periods (.), which generally are used for accessing properties or methods of an object in many programming languages. Since all the tokens are the same, there's only one cluster here. Given this, a fitting label for this cluster might be \"Property or Method Access Operators\".",
+            "All of these items are forms of punctuation marks used in written language. Specifically, they are periods (.) and ellipsis (..)."
+        ]
+    },
+    "40": {
+        "Entries": [
+            {
+                "Word": "putJson",
+                "WordID": "1",
+                "SentID": "9",
+                "TokenID": "6"
+            },
+            {
+                "Word": "postJson",
+                "WordID": "1",
+                "SentID": "12",
+                "TokenID": "6"
+            },
+            {
+                "Word": "postJson",
+                "WordID": "2",
+                "SentID": "38",
+                "TokenID": "6"
+            }
+        ],
+        "Labels": [
+            "\"JSON Data Handling Methods\"",
+            "Label: HTTP Methods",
+            "The common trait among these items: putJson, postJson, postJson is that they all appear to be methods or functions related to HTTP requests in API development. They are likely used for sending JSON (JavaScript Object Notation) data to a server. \"PutJson\" and \"PostJson\" refer to the PUT and POST methods in HTTP respectively."
+        ]
+    },
+    "13": {
+        "Entries": [
+            {
+                "Word": "(",
+                "WordID": "11",
+                "SentID": "9",
+                "TokenID": "7"
+            },
+            {
+                "Word": "(",
+                "WordID": "15",
+                "SentID": "12",
+                "TokenID": "7"
+            },
+            {
+                "Word": "(",
+                "WordID": "23",
+                "SentID": "21",
+                "TokenID": "4"
+            },
+            {
+                "Word": "(",
+                "WordID": "30",
+                "SentID": "34",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Opening Parentheses\"",
+            "Label: \"Opening Parentheses\"",
+            "The common trait among these items: (, (, (, ( is that they are all open parenthesis symbols."
+        ]
+    },
+    "4": {
+        "Entries": [
+            {
+                "Word": ",",
+                "WordID": "1",
+                "SentID": "10",
+                "TokenID": "1"
+            },
+            {
+                "Word": ",",
+                "WordID": "2",
+                "SentID": "13",
+                "TokenID": "1"
+            },
+            {
+                "Word": ",",
+                "WordID": "3",
+                "SentID": "15",
+                "TokenID": "1"
+            },
+            {
+                "Word": ",",
+                "WordID": "4",
+                "SentID": "22",
+                "TokenID": "2"
+            },
+            {
+                "Word": ",",
+                "WordID": "5",
+                "SentID": "23",
+                "TokenID": "2"
+            },
+            {
+                "Word": ",",
+                "WordID": "6",
+                "SentID": "32",
+                "TokenID": "1"
+            },
+            {
+                "Word": ",",
+                "WordID": "7",
+                "SentID": "35",
+                "TokenID": "2"
+            },
+            {
+                "Word": ",",
+                "WordID": "8",
+                "SentID": "38",
+                "TokenID": "9"
+            }
+        ],
+        "Labels": [
+            "Apologies, but your question seems to be missing some specific content. Could you please provide more context or details?",
+            "I'm sorry, but the information provided seems incomplete. There are no specific code tokens provided to analyze and label their clusters based on common traits. Could you please provide more detailed information?",
+            "All the items listed are punctuation marks, specifically commas and a period."
+        ]
+    },
+    "17": {
+        "Entries": [
+            {
+                "Word": "WS",
+                "WordID": "1",
+                "SentID": "10",
+                "TokenID": "2"
+            },
+            {
+                "Word": "WS",
+                "WordID": "2",
+                "SentID": "13",
+                "TokenID": "2"
+            },
+            {
+                "Word": "WS",
+                "WordID": "3",
+                "SentID": "16",
+                "TokenID": "0"
+            },
+            {
+                "Word": "WS",
+                "WordID": "4",
+                "SentID": "18",
+                "TokenID": "0"
+            },
+            {
+                "Word": "WS",
+                "WordID": "5",
+                "SentID": "20",
+                "TokenID": "0"
+            },
+            {
+                "Word": "WS",
+                "WordID": "6",
+                "SentID": "33",
+                "TokenID": "0"
+            }
+        ],
+        "Labels": [
+            "\"Whitespace Repeated\"",
+            "The common trait of these code tokens is that they are all Whitespace (WS) tokens. Therefore, the appropriate label for this cluster would be \"Whitespace Tokens\".",
+            "A common trait among these items is that they all consist of the same letters \"WS\"."
+        ]
+    },
+    "11": {
+        "Entries": [
+            {
+                "Word": ".",
+                "WordID": "15",
+                "SentID": "10",
+                "TokenID": "3"
+            },
+            {
+                "Word": ".",
+                "WordID": "16",
+                "SentID": "10",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "17",
+                "SentID": "10",
+                "TokenID": "7"
+            },
+            {
+                "Word": ".",
+                "WordID": "20",
+                "SentID": "13",
+                "TokenID": "3"
+            },
+            {
+                "Word": ".",
+                "WordID": "21",
+                "SentID": "13",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "22",
+                "SentID": "13",
+                "TokenID": "7"
+            },
+            {
+                "Word": ".",
+                "WordID": "24",
+                "SentID": "16",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "25",
+                "SentID": "16",
+                "TokenID": "3"
+            },
+            {
+                "Word": ".",
+                "WordID": "26",
+                "SentID": "16",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "28",
+                "SentID": "18",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "29",
+                "SentID": "18",
+                "TokenID": "3"
+            },
+            {
+                "Word": ".",
+                "WordID": "30",
+                "SentID": "18",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "32",
+                "SentID": "20",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "33",
+                "SentID": "20",
+                "TokenID": "3"
+            },
+            {
+                "Word": ".",
+                "WordID": "34",
+                "SentID": "20",
+                "TokenID": "5"
+            },
+            {
+                "Word": ".",
+                "WordID": "40",
+                "SentID": "33",
+                "TokenID": "1"
+            },
+            {
+                "Word": ".",
+                "WordID": "41",
+                "SentID": "33",
+                "TokenID": "3"
+            },
+            {
+                "Word": ".",
+                "WordID": "42",
+                "SentID": "33",
+                "TokenID": "5"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Marks\"",
+            "As all the provided code tokens are \".\", these can be labeled as \"Dot Operator\" or \"Member Access Operator\" as they are often used in programming to access properties or methods of an object.",
+            "The common trait among these items is that they are all periods or full stops."
+        ]
+    },
+    "25": {
+        "Entries": [
+            {
+                "Word": "Path",
+                "WordID": "1",
+                "SentID": "10",
+                "TokenID": "4"
+            },
+            {
+                "Word": "Path",
+                "WordID": "2",
+                "SentID": "13",
+                "TokenID": "4"
+            },
+            {
+                "Word": "Path",
+                "WordID": "3",
+                "SentID": "16",
+                "TokenID": "2"
+            },
+            {
+                "Word": "Path",
+                "WordID": "4",
+                "SentID": "18",
+                "TokenID": "2"
+            },
+            {
+                "Word": "Path",
+                "WordID": "5",
+                "SentID": "20",
+                "TokenID": "2"
+            },
+            {
+                "Word": "Path",
+                "WordID": "6",
+                "SentID": "33",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Path Operations\"",
+            "Given that all the code tokens in this cluster are \"Path\", the label for this cluster can be \"Path Tokens\".",
+            "The common trait among these items is that they are all paths."
+        ]
+    },
+    "42": {
+        "Entries": [
+            {
+                "Word": "User",
+                "WordID": "4",
+                "SentID": "10",
+                "TokenID": "6"
+            },
+            {
+                "Word": "User",
+                "WordID": "8",
+                "SentID": "13",
+                "TokenID": "6"
+            },
+            {
+                "Word": "User",
+                "WordID": "11",
+                "SentID": "16",
+                "TokenID": "4"
+            },
+            {
+                "Word": "User",
+                "WordID": "14",
+                "SentID": "18",
+                "TokenID": "4"
+            },
+            {
+                "Word": "User",
+                "WordID": "17",
+                "SentID": "20",
+                "TokenID": "4"
+            },
+            {
+                "Word": "User",
+                "WordID": "21",
+                "SentID": "33",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"User Management\"",
+            "Label: \"User Identifier Tokens\"",
+            "The common trait among these items is that they are all Users."
+        ]
+    },
+    "29": {
+        "Entries": [
+            {
+                "Word": "Version1",
+                "WordID": "1",
+                "SentID": "10",
+                "TokenID": "8"
+            },
+            {
+                "Word": "Version1",
+                "WordID": "2",
+                "SentID": "13",
+                "TokenID": "8"
+            },
+            {
+                "Word": "Version1",
+                "WordID": "3",
+                "SentID": "16",
+                "TokenID": "6"
+            },
+            {
+                "Word": "Version1",
+                "WordID": "4",
+                "SentID": "18",
+                "TokenID": "6"
+            },
+            {
+                "Word": "Version1",
+                "WordID": "5",
+                "SentID": "20",
+                "TokenID": "6"
+            },
+            {
+                "Word": "Version1",
+                "WordID": "6",
+                "SentID": "33",
+                "TokenID": "6"
+            }
+        ],
+        "Labels": [
+            "\"Repeated Version1 Instances\"",
+            "Label: \"Version1 Identifiers\"",
+            "The common trait among these items is that they are all identical, sharing the same name \"Version1\"."
+        ]
+    },
+    "30": {
+        "Entries": [
+            {
+                "Word": ".",
+                "WordID": "18",
+                "SentID": "10",
+                "TokenID": "9"
+            },
+            {
+                "Word": ".",
+                "WordID": "23",
+                "SentID": "13",
+                "TokenID": "9"
+            },
+            {
+                "Word": ".",
+                "WordID": "27",
+                "SentID": "16",
+                "TokenID": "7"
+            },
+            {
+                "Word": ".",
+                "WordID": "31",
+                "SentID": "18",
+                "TokenID": "7"
+            },
+            {
+                "Word": ".",
+                "WordID": "35",
+                "SentID": "20",
+                "TokenID": "7"
+            },
+            {
+                "Word": ".",
+                "WordID": "43",
+                "SentID": "33",
+                "TokenID": "7"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Marks\"",
+            "As all the given code tokens are \".\", this cluster can be labeled as \"Punctuation: Period/Dot Operator\". This could represent property access in object-oriented programming languages or decimal points in numeric values.",
+            "All the items listed are punctuation marks, specifically periods and ellipses."
+        ]
+    },
+    "7": {
+        "Entries": [
+            {
+                "Word": "userCreate",
+                "WordID": "1",
+                "SentID": "10",
+                "TokenID": "10"
+            },
+            {
+                "Word": "userUpdate",
+                "WordID": "1",
+                "SentID": "13",
+                "TokenID": "10"
+            },
+            {
+                "Word": "userActivate",
+                "WordID": "1",
+                "SentID": "16",
+                "TokenID": "8"
+            },
+            {
+                "Word": "userDeActivate",
+                "WordID": "1",
+                "SentID": "18",
+                "TokenID": "8"
+            },
+            {
+                "Word": "incrementInvalidLogin",
+                "WordID": "1",
+                "SentID": "20",
+                "TokenID": "8"
+            },
+            {
+                "Word": "boolean",
+                "WordID": "1",
+                "SentID": "36",
+                "TokenID": "0"
+            }
+        ],
+        "Labels": [
+            "\"User Account Management\"",
+            "1. User Management Functions: This cluster includes 'userCreate', 'userUpdate', 'userActivate', 'userDeActivate'. These tokens are all related to actions or operations that can be performed on a user within a system.\n\n2. Login Security Function: The token 'incrementInvalidLogin' falls into this category. This function typically relates to security features in a login process, specifically invalid login attempts.\n\n3. Variable Type: The token 'boolean' is commonly used to represent a variable's type",
+            "All these items are related to user management and authentication in a software system or application. They represent functions, methods, or variables that could be used to create, update, activate, or deactivate a user account, keep track of invalid login attempts, and store boolean (true/false) values."
+        ]
+    },
+    "36": {
+        "Entries": [
+            {
+                "Word": "(",
+                "WordID": "12",
+                "SentID": "10",
+                "TokenID": "11"
+            },
+            {
+                "Word": "(",
+                "WordID": "16",
+                "SentID": "13",
+                "TokenID": "11"
+            },
+            {
+                "Word": "(",
+                "WordID": "18",
+                "SentID": "16",
+                "TokenID": "9"
+            },
+            {
+                "Word": "(",
+                "WordID": "20",
+                "SentID": "18",
+                "TokenID": "9"
+            },
+            {
+                "Word": "(",
+                "WordID": "22",
+                "SentID": "20",
+                "TokenID": "9"
+            },
+            {
+                "Word": "(",
+                "WordID": "29",
+                "SentID": "33",
+                "TokenID": "9"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Opening Parentheses\"",
+            "Label: \"Opening Parentheses\"",
+            "The common trait among these items is that they are all open parentheses."
+        ]
+    },
+    "34": {
+        "Entries": [
+            {
+                "Word": ")",
+                "WordID": "10",
+                "SentID": "10",
+                "TokenID": "12"
+            },
+            {
+                "Word": ")",
+                "WordID": "14",
+                "SentID": "13",
+                "TokenID": "12"
+            },
+            {
+                "Word": ")",
+                "WordID": "18",
+                "SentID": "16",
+                "TokenID": "10"
+            },
+            {
+                "Word": ")",
+                "WordID": "22",
+                "SentID": "18",
+                "TokenID": "10"
+            },
+            {
+                "Word": ")",
+                "WordID": "26",
+                "SentID": "20",
+                "TokenID": "10"
+            },
+            {
+                "Word": ")",
+                "WordID": "35",
+                "SentID": "33",
+                "TokenID": "10"
+            }
+        ],
+        "Labels": [
+            "\"Closing Parentheses\"",
+            "Sure, since all the code tokens are identical in this case, you can label this cluster as \"Closing Parentheses\".",
+            "The common trait among these items is that they are all closing parentheses."
+        ]
+    },
+    "21": {
+        "Entries": [
+            {
+                "Word": ")",
+                "WordID": "11",
+                "SentID": "10",
+                "TokenID": "13"
+            },
+            {
+                "Word": ")",
+                "WordID": "12",
+                "SentID": "10",
+                "TokenID": "14"
+            },
+            {
+                "Word": ")",
+                "WordID": "15",
+                "SentID": "13",
+                "TokenID": "13"
+            },
+            {
+                "Word": ")",
+                "WordID": "16",
+                "SentID": "13",
+                "TokenID": "14"
+            },
+            {
+                "Word": ")",
+                "WordID": "19",
+                "SentID": "16",
+                "TokenID": "11"
+            },
+            {
+                "Word": ")",
+                "WordID": "20",
+                "SentID": "16",
+                "TokenID": "12"
+            },
+            {
+                "Word": ")",
+                "WordID": "23",
+                "SentID": "18",
+                "TokenID": "11"
+            },
+            {
+                "Word": ")",
+                "WordID": "24",
+                "SentID": "18",
+                "TokenID": "12"
+            },
+            {
+                "Word": ")",
+                "WordID": "27",
+                "SentID": "20",
+                "TokenID": "11"
+            },
+            {
+                "Word": ")",
+                "WordID": "28",
+                "SentID": "20",
+                "TokenID": "12"
+            },
+            {
+                "Word": ")",
+                "WordID": "36",
+                "SentID": "33",
+                "TokenID": "11"
+            },
+            {
+                "Word": ")",
+                "WordID": "37",
+                "SentID": "33",
+                "TokenID": "12"
+            }
+        ],
+        "Labels": [
+            "\"Closing Parentheses\"",
+            "Since all the code tokens are identical, you can label this cluster as \"Closing Parentheses\".",
+            "The common trait among these items is that they are all closing parentheses."
+        ]
+    },
+    "12": {
+        "Entries": [
+            {
+                "Word": "String",
+                "WordID": "1",
+                "SentID": "22",
+                "TokenID": "0"
+            },
+            {
+                "Word": "String",
+                "WordID": "2",
+                "SentID": "23",
+                "TokenID": "0"
+            },
+            {
+                "Word": "String",
+                "WordID": "3",
+                "SentID": "24",
+                "TokenID": "0"
+            },
+            {
+                "Word": "String",
+                "WordID": "4",
+                "SentID": "27",
+                "TokenID": "0"
+            },
+            {
+                "Word": "String",
+                "WordID": "5",
+                "SentID": "28",
+                "TokenID": "0"
+            },
+            {
+                "Word": "String",
+                "WordID": "6",
+                "SentID": "29",
+                "TokenID": "0"
+            }
+        ],
+        "Labels": [
+            "\"Multiple Strings\"",
+            "Label: \"String Literals\"",
+            "The common trait among these items is that they are all strings."
+        ]
+    },
+    "10": {
+        "Entries": [
+            {
+                "Word": "{",
+                "WordID": "1",
+                "SentID": "24",
+                "TokenID": "3"
+            },
+            {
+                "Word": ";",
+                "WordID": "14",
+                "SentID": "25",
+                "TokenID": "7"
+            },
+            {
+                "Word": ";",
+                "WordID": "16",
+                "SentID": "30",
+                "TokenID": "7"
+            }
+        ],
+        "Labels": [
+            "\"Punctuation Symbols in Programming\"",
+            "The code tokens you provided are often associated with structuring code and ending statements. Based on their common traits, we can label this cluster as \"Syntax Delimiters\".",
+            "The common trait among these items: {, ;, ; is that they are all used in various aspects of programming and code syntax."
+        ]
+    },
+    "46": {
+        "Entries": [
+            {
+                "Word": "toChangePasswordFor",
+                "WordID": "1",
+                "SentID": "25",
+                "TokenID": "1"
+            },
+            {
+                "Word": "toChangePasswordFor",
+                "WordID": "2",
+                "SentID": "26",
+                "TokenID": "0"
+            },
+            {
+                "Word": "toChangePasswordFor",
+                "WordID": "3",
+                "SentID": "31",
+                "TokenID": "0"
+            },
+            {
+                "Word": "toChangePasswordFor",
+                "WordID": "4",
+                "SentID": "32",
+                "TokenID": "0"
+            }
+        ],
+        "Labels": [
+            "\"Password Change Functionality\"",
+            "Label: Function Names for Password Change",
+            "The common trait among these items is that they are all identical. They appear to be function or method names in a programming context, specifically for changing a password."
+        ]
+    },
+    "33": {
+        "Entries": [
+            {
+                "Word": "=",
+                "WordID": "1",
+                "SentID": "25",
+                "TokenID": "2"
+            },
+            {
+                "Word": "=",
+                "WordID": "5",
+                "SentID": "30",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"Assignment Operators\"",
+            "Based on the provided code tokens, the common trait is that they are all \"Assignment Operators\".",
+            "The common trait among these items: =, =. is that they are both symbols used in mathematics and computing. The equal sign (=) is used to denote equality between two values or expressions, while the symbol (=.) is often used in programming to denote a kind of assignment operation."
+        ]
+    },
+    "48": {
+        "Entries": [
+            {
+                "Word": "=",
+                "WordID": "2",
+                "SentID": "27",
+                "TokenID": "2"
+            },
+            {
+                "Word": "=",
+                "WordID": "3",
+                "SentID": "28",
+                "TokenID": "2"
+            },
+            {
+                "Word": "=",
+                "WordID": "4",
+                "SentID": "29",
+                "TokenID": "2"
+            }
+        ],
+        "Labels": [
+            "\"Assignment Operators\"",
+            "The common trait of these code tokens is that they are all assignment operators. Therefore, the label for this cluster can be \"Assignment Operators\".",
+            "A common trait among these items, which are all equal signs (=), is that they are used in mathematics to denote equality or equivalence between two values or equations."
+        ]
+    },
+    "26": {
+        "Entries": [
+            {
+                "Word": "JSONObject",
+                "WordID": "1",
+                "SentID": "30",
+                "TokenID": "0"
+            },
+            {
+                "Word": "JSONObject",
+                "WordID": "2",
+                "SentID": "30",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"JSON Object Manipulation\"",
+            "Label: JSON Object Processing",
+            "The common trait among these items, JSONObject and JSONObject, is that they both represent a data type in computer programming used for data interchange. Both are used to store and exchange data between server and client in JSON (JavaScript Object Notation) format. JSON objects contain data in key-value pair format."
+        ]
+    },
+    "8": {
+        "Entries": [
+            {
+                "Word": "passwordClear",
+                "WordID": "1",
+                "SentID": "30",
+                "TokenID": "1"
+            },
+            {
+                "Word": "setPasswordClear",
+                "WordID": "1",
+                "SentID": "31",
+                "TokenID": "2"
+            },
+            {
+                "Word": "passwordClear",
+                "WordID": "2",
+                "SentID": "31",
+                "TokenID": "4"
+            }
+        ],
+        "Labels": [
+            "\"Password Visibility Management\"",
+            "Sure, these code tokens seem to be related to password management operations. Therefore, a potential label for this cluster could be \"Password Manipulation Methods\".",
+            "The common trait among these items is that they all seem to be related to the action of clearing or setting a password in a computer program or system. They look like function or method names used in programming."
+        ]
+    },
+    "47": {
+        "Entries": [
+            {
+                "Word": "}",
+                "WordID": "7",
+                "SentID": "34",
+                "TokenID": "0"
+            }
+        ],
+        "Labels": [
+            "\"End of code block\"",
+            "As an AI, I need more context to provide accurate labels. The token you provided, \"}\", is typically associated with the end of a block of code in many programming languages such as C, C++, Java, JavaScript and others. However, without additional tokens or clusters, it's not possible to provide a detailed classification. Please provide more information or additional token clusters.",
+            "As an AI, I'm unable to provide a common trait among these items as you have only provided a single item: \"}\". Please provide a list of items for me to analyze."
+        ]
+    }
+}
