@@ -1,12 +1,19 @@
 import tkinter as tk
 from tkinter import ttk
+import tkinter.font as tkFont
 import json  # Import the json module to work with JSON files
 
-cluster_id = None
+import numpy as np
+from PIL import Image
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+# from nltk.corpus import stopwords
 
+cluster_id = None
 cluster_id = None
 current_cluster_index = 0
 clusters_data = None
+
 
 def update_json_with_user_input(cluster_id, user_input):
     try:
@@ -26,6 +33,7 @@ def update_json_with_user_input(cluster_id, user_input):
 def load_next_cluster_data():
     global current_cluster_index, clusters_data
     cluster_ids = list(clusters_data.keys())
+    print("load_next_cluster_data() called, current_cluster_index:", current_cluster_index, "Cluster IDs:", cluster_ids)
     if current_cluster_index < len(cluster_ids):
         current_cluster = cluster_ids[current_cluster_index]
         load_cluster_data(current_cluster)
@@ -48,14 +56,17 @@ def load_cluster_data(cluster_id):
 
     cluster_data = clusters_data[cluster_id]
     Entries = cluster_data["Entries"]
+
     for entry in Entries:
         token = entry["Word"]
         sentence_id = int(entry["SentID"])
         token_id = int(entry["TokenID"])
+        word_id = int(entry["WordID"])
+        print("WordID", word_id, ",Token:", token, ",Sentence ID:", sentence_id, ",Token ID:", token_id)
         try:
             sentence = sentences[sentence_id]
             token_label = label_lines[sentence_id][token_id]
-            treeview.insert("", tk.END, values=(token, token_label, sentence))
+            treeview.insert("", tk.END, values=(word_id, token, token_label, sentence))
         except:
             print(f"Skipping entry: SentID {sentence_id}, TokenID {token_id} is out of range.")
 
@@ -111,6 +122,8 @@ enter_button.pack(side=tk.LEFT, padx=(10, 0), pady=10)
 labels_frame = tk.Frame(root, height=100)  # Adjust height as needed
 labels_frame.pack(fill=tk.X, pady=10)
 
+
+
 # Title label for the LLM Suggestions Text widget
 llm_title_label = tk.Label(labels_frame, text="LLM Suggestions", font=("Arial", 12, "bold"))
 llm_title_label.pack(side=tk.TOP, fill=tk.X)
@@ -130,7 +143,8 @@ frame = tk.Frame(root)
 frame.pack(fill=tk.BOTH, expand=True)
 
 # Define the Treeview widget with the desired columns
-treeview = ttk.Treeview(frame, columns=("Cluster # words", "Token Label", "Sentence Context"), show="headings")
+treeview = ttk.Treeview(frame, columns=("WordID", "Cluster # words", "Token Label", "Sentence Context"), show="headings")
+treeview.heading("WordID", text="Word ID")
 treeview.heading("Cluster # words", text="Words from Cluster #")
 treeview.heading("Token Label", text="Token's Label")
 treeview.heading("Sentence Context", text="Context from Sentence")
@@ -139,14 +153,23 @@ treeview.column("Token Label", stretch=tk.YES)
 treeview.column("Sentence Context", stretch=tk.YES)
 treeview.pack(fill=tk.BOTH, expand=True)
 
+customFont = tkFont.Font(family="Helvetica", size=12)  # Adjust the size as needed
+style = ttk.Style()
+style.configure("Treeview", font=customFont, rowheight=customFont.metrics("linespace"))
+
 
 enter_button.config(command=on_enter_click)
 
-# Load JSON data and display labels
+
 json_file_path = "enriched_cluster_labels.json"
 sentences_file_path = "codetest2_test_unique.in"
 labels_file_path = "codetest2_test_unique.label"
-load_data_from_json(json_file_path)
+
+with open(json_file_path, "r") as jsonFile:
+    clusters_data = json.load(jsonFile)
+
+load_next_cluster_data();
+
 
 root.mainloop()
 

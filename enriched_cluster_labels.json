@@ -48,7 +48,8 @@
             "\"Repeated Use of Return Buffer\"",
             "The common trait for these code tokens is that they are all identical, which suggests that they are part of the same function or method. Therefore, an appropriate label for this cluster could be \"Function Return Statements\".",
             "The common trait among these items is that they are all named \"returnBuffer\". It suggests they might be functions or variables used in programming to return a buffer, which is a temporary storage area. However, without further context, it's difficult to provide more detailed information."
-        ]
+        ],
+        "UserInput": "This is a test"
     },
     "5": {
         "Entries": [
@@ -129,7 +130,8 @@
             "\"Punctuation Marks\"",
             "Since all the provided code tokens are \".\", they can be labeled as \"Dot Operator\". This operator is commonly used for accessing properties or methods of an object, or as a decimal point in numerical values in many programming languages.",
             "The common trait among these items is that they are all punctuation marks, specifically periods or full stops, and ellipses."
-        ]
+        ],
+        "UserInput": "This is a dot"
     },
     "19": {
         "Entries": [
@@ -174,7 +176,8 @@
             "\"Multiple Appends\"",
             "The common trait for these code tokens is that they all represent a similar operation in programming, specifically the action of adding an element to the end of a list or other collection. \n\nLabel: \"List Append Operations\"",
             "The common trait among these items is that they are all the same action, \"append\". This is commonly used in programming to add or attach something to the end of a list or array."
-        ]
+        ],
+        "UserInput": "This is a test"
     },
     "6": {
         "Entries": [
@@ -243,7 +246,8 @@
             "\"Multiple Opening Parentheses\"",
             "Based on the provided code tokens, the common trait is that they are all \"Opening Parentheses\". Therefore, the label for this cluster can be \"Opening Parentheses\".",
             "The common trait among these items is that they are all opening parentheses."
-        ]
+        ],
+        "UserInput": "This is a test"
     },
     "23": {
         "Entries": [
