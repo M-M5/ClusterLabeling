@@ -3,10 +3,10 @@ from tkinter import ttk
 import tkinter.font as tkFont
 import json  # Import the json module to work with JSON files
 
-import numpy as np
-from PIL import Image
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
+# import numpy as np
+# from PIL import Image
+# from wordcloud import WordCloud
+# import matplotlib.pyplot as plt
 # from nltk.corpus import stopwords
 
 cluster_id = None
@@ -59,7 +59,7 @@ def load_next_cluster_data():
 
 def load_cluster_data(cluster_id):
     global current_cluster_index, clusters_data
-
+    print("Current cluster index: ", current_cluster_index)
     # with (open(sentences_file_path, "r")) as sentencesFile:
     #     sentences = sentencesFile.readlines()
 
@@ -153,9 +153,9 @@ treeview = ttk.Treeview(frame, columns=("Cluster # words", "Token Label", "Sente
 treeview.heading("Cluster # words", text="Words from Cluster #")
 treeview.heading("Token Label", text="Token's Label")
 treeview.heading("Sentence Context", text="Context from Sentence")
-treeview.column("Cluster # words", stretch=tk.YES)
-treeview.column("Token Label", stretch=tk.YES)
-treeview.column("Sentence Context", stretch=tk.YES)
+treeview.column("Cluster # words", stretch=tk.YES, width=10)
+treeview.column("Token Label", stretch=tk.YES, width=10)
+treeview.column("Sentence Context", stretch=tk.YES, width=300)
 treeview.pack(fill=tk.BOTH, expand=True)
 
 customFont = tkFont.Font(family="Helvetica", size=12)  # Adjust the size as needed
@@ -166,7 +166,7 @@ style.configure("Treeview", font=customFont, rowheight=customFont.metrics("lines
 enter_button.config(command=on_enter_click)
 
 
-json_file_path = "grouped_by_cluster-500.json"
+json_file_path = "Manas_Super_Cool_Clusters.json"
 labels_file_path = "codetest2_test_unique.label"
 
 with open(json_file_path, "r") as jsonFile:

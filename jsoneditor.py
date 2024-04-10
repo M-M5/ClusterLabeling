@@ -1,7 +1,7 @@
 import json
 
 # Path to your JSON file
-json_file_path = 'Tanners_Super_Cool_Clusters.json'
+json_file_path = 'Arushis_Super_Cool_Clusters.json'
 
 def delete_first_50_json_objects(json_file_path):
     try:
@@ -49,7 +49,10 @@ def retain_up_to_50_json_objects(json_file_path):
         print(f"An error occurred: {e}")
 
 # Run the function with your JSON file path
-# retain_up_to_50_json_objects(json_file_path)
+delete_first_50_json_objects(json_file_path)
+delete_first_50_json_objects(json_file_path)
+delete_first_50_json_objects(json_file_path)
+retain_up_to_50_json_objects(json_file_path)
 
 
 with open(json_file_path, 'r') as file:
