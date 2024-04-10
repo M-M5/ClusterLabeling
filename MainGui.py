@@ -15,13 +15,23 @@ current_cluster_index = 0
 clusters_data = None
 
 
-def update_json_with_user_input(cluster_id, user_input):
+def update_json_with_user_input(cluster_id, meaningful, user_input, lex_input, syn_input, sem_input):
     try:
         with open(json_file_path, 'r') as file:
             data = json.load(file)
 
         if cluster_id in data:
+            print("Updating JSON with input: ", meaningful, lex_input, syn_input, sem_input)
+            data[cluster_id][-1]["Meaningful"] = meaningful
+            if lex_input:
+                data[cluster_id][-1]["Lexicographic"] = lex_input
+            if syn_input:
+                data[cluster_id][-1]["Syntactic"] = syn_input
+            if sem_input:
+                data[cluster_id][-1]["Semantic"] = sem_input
+
             data[cluster_id][-1]["UserInput"] = user_input
+
         else:
             print(f"Error writing to JSON: Cluster ID {cluster_id} not found")
 
@@ -29,16 +39,6 @@ def update_json_with_user_input(cluster_id, user_input):
             json.dump(data, file, indent=4)
     except IOError as e:
         print("An error occurred while writing to the JSON file:", e)
-
-# def load_next_cluster_data():
-#     global current_cluster_index, clusters_data
-#     cluster_ids = list(clusters_data.keys())
-
-#     if current_cluster_index < len(cluster_ids):
-#         current_cluster = cluster_ids[current_cluster_index]
-#         load_cluster_data(current_cluster)
-#     else:
-#         print("No more clusters to display.")
 
 def load_next_cluster_data():
     global current_cluster_index, clusters_data
@@ -98,9 +98,16 @@ def on_enter_click():
     global current_cluster_index
     current_cluster = list(clusters_data.keys())[current_cluster_index]
     user_text = user_input.get()
+    lex_text = lex_input.get()
+    syn_text = syn_input.get()
+    sem_text = sem_input.get()
+    meaningful = meaningful_answer.get()
     print("User input to add to JSON:", user_text)
-    update_json_with_user_input(current_cluster, user_text)
+    update_json_with_user_input(current_cluster, meaningful, user_text, lex_text, syn_text, sem_text)
     user_input.delete(0, tk.END)
+    lex_input.delete(0, tk.END)
+    syn_input.delete(0, tk.END)
+    sem_input.delete(0, tk.END)
     current_cluster_index += 1
     load_next_cluster_data()
 
@@ -113,7 +120,7 @@ top_frame = tk.Frame(root)
 top_frame.pack(fill=tk.X)
 
 # Label for the input
-input_label = tk.Label(top_frame, text="How would you label this cluster:")
+input_label = tk.Label(top_frame, text="Cluster Context Input:")
 input_label.pack(side=tk.LEFT, padx=(10, 2), pady=10)
 
 # Entry widget for the input
@@ -123,6 +130,51 @@ user_input.pack(side=tk.LEFT, expand=True, fill=tk.X, padx=(0, 10), pady=10)
 # Enter button next to the input
 enter_button = tk.Button(top_frame, text="Enter", command=lambda: print("Entered text:", user_input.get()))
 enter_button.pack(side=tk.LEFT, padx=(10, 0), pady=10)
+
+# Frame for the new textboxes
+questions_frame = tk.Frame(root)
+questions_frame.pack(fill=tk.X, before=top_frame)  # Ensure this frame is packed before the top_frame
+
+# Lexicographic? Label and Textbox
+lex_label = tk.Label(questions_frame, text="Lexicographic?")
+lex_label.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+lex_input = tk.Entry(questions_frame)
+lex_input.pack(side=tk.LEFT, expand=False, fill=tk.X, padx=(0, 10), pady=10)
+
+# Syntactic? Label and Textbox
+syn_label = tk.Label(questions_frame, text="Syntactic?")
+syn_label.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+syn_input = tk.Entry(questions_frame)
+syn_input.pack(side=tk.LEFT, expand=False, fill=tk.X, padx=(0, 10), pady=10)
+
+# Semantic? Label and Textbox
+sem_label = tk.Label(questions_frame, text="Semantic?")
+sem_label.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+sem_input = tk.Entry(questions_frame)
+sem_input.pack(side=tk.LEFT, expand=False, fill=tk.X, padx=(0, 10), pady=10)
+
+# Frame for the meaningful question
+meaningful_frame = tk.Frame(root)
+meaningful_frame.pack(fill=tk.X, before=questions_frame)  # Ensure this frame is packed before the questions_frame
+
+# Label for the question
+meaningful_label = tk.Label(meaningful_frame, text="Is the cluster meaningful?")
+meaningful_label.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+
+# Variable to hold the answer
+meaningful_answer = tk.StringVar(value="I don't know")  # Default value
+
+# Radio buttons for the answers
+yes_rb = tk.Radiobutton(meaningful_frame, text="Yes", variable=meaningful_answer, value="Yes")
+yes_rb.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+
+no_rb = tk.Radiobutton(meaningful_frame, text="No", variable=meaningful_answer, value="No")
+no_rb.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+
+idk_rb = tk.Radiobutton(meaningful_frame, text="I don't know", variable=meaningful_answer, value="I don't know")
+idk_rb.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+
+
 
 # Frame for displaying labels, placed below the user input and above the Treeview
 labels_frame = tk.Frame(root, height=100)  # Adjust height as needed
