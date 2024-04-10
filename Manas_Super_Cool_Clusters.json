@@ -16314,7 +16314,8 @@
         {
             "Labels": [
                 "\"String Data Type Manipulation\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: IDENT. This cluster encapsulates the instantiation of String type variables"
         }
     ],
     "50": [
@@ -17357,7 +17358,8 @@
         {
             "Labels": [
                 "\"Java Code Elements for Geolocation and Encryption Implementation\""
-            ]
+            ],
+            "UserInput": "Meaningful: IDK. Theme: N/A. This cluster mainly includes IDENT labels of primitive variables. It also includes some other types of labels which have no pattern"
         }
     ],
     "92": [
@@ -19527,7 +19529,8 @@
         {
             "Labels": [
                 "\"Assignment Operator\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: EQUAL. This cluster encapsulates the assignment operator and is used to instantiate objects and variables"
         }
     ],
     "91": [
@@ -20143,7 +20146,8 @@
         {
             "Labels": [
                 "\"Opening Parenthesis\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Syntactic Character. This cluster encapsulates uses of casting and checking if a value is null for a ternary operator"
         }
     ],
     "387": [
@@ -20808,7 +20812,8 @@
         {
             "Labels": [
                 "\"Equality Comparison Operator\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Syntactic Character. This cluster encapsulates the use of equality operators in ternary operators or if statements"
         }
     ],
     "196": [
@@ -21501,7 +21506,8 @@
         {
             "Labels": [
                 "\"Null Value Handling\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: IDENT. This cluster encapsulates the use checking if values are null"
         }
     ],
     "360": [
@@ -21865,7 +21871,8 @@
         {
             "Labels": [
                 "\"Closing Parenthesis\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Closing Parenthesis. Casting, Null conditonal"
         }
     ],
     "310": [
@@ -22159,7 +22166,8 @@
         {
             "Labels": [
                 "\"Optional object or null-checking operator usage\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Ternary Operator. Null Conditional, Ternary Operator"
         }
     ],
     "470": [
@@ -22453,7 +22461,8 @@
         {
             "Labels": [
                 "\"Punctuation Marks in Java Code\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Colon. Ternary Operator"
         }
     ],
     "108": [
@@ -24455,7 +24464,8 @@
         {
             "Labels": [
                 "\"Punctuation Marks in Java Code\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Semicolon. Cluster Concepts: Instantiation"
         }
     ],
     "221": [
@@ -25442,7 +25452,8 @@
         {
             "Labels": [
                 "\"Java Security and Authentication Components\""
-            ]
+            ],
+            "UserInput": "Meaningful: Yes. Theme: Semantic: ENUM, Function, parameter. Mapping, Conditionals, Stringbuilder"
         }
     ],
     "117": [
