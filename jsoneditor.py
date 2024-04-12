@@ -1,7 +1,7 @@
 import json
 
 # Path to your JSON file
-json_file_path = 'Arushis_Super_Cool_Clusters.json'
+json_file_path = '451-500.json'
 
 def delete_first_50_json_objects(json_file_path):
     try:
@@ -49,14 +49,37 @@ def retain_up_to_50_json_objects(json_file_path):
         print(f"An error occurred: {e}")
 
 # Run the function with your JSON file path
-delete_first_50_json_objects(json_file_path)
-delete_first_50_json_objects(json_file_path)
-delete_first_50_json_objects(json_file_path)
-retain_up_to_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# delete_first_50_json_objects(json_file_path)
+# retain_up_to_50_json_objects(json_file_path)
+
+files=['1-50.json','51-100.json', '101-150.json', '151-200.json', '201-250.json', '251-300.json', '301-350.json', '351-400.json', '401-450.json', '451-500.json']
+
+# def merge_JsonFiles(filename):
+#     result = list()
+#     # print(filename)
+#     for f1 in filename:
+#         print(f1)
+#         with open(f1, 'r') as infile:
+#             result.extend(json.load(infile))
+
+#     with open('merged_clusters.json', 'w') as output_file:
+#         json.dump(result, output_file)
+
+# merge_JsonFiles(files)
 
 
-with open(json_file_path, 'r') as file:
-    data = json.load(file)
+with open('merged_clusters.json', "w") as outfile:
+   outfile.write('{}'.format('\n'.join([open(f, "r").read() for f in files])))
 
-print(len(data.keys()))
+# with open(json_file_path, 'r') as file:
+#     data = json.load(file)
 
+# print(len(data.keys()))

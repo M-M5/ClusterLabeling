@@ -15,7 +15,7 @@ current_cluster_index = 0
 clusters_data = None
 
 
-def update_json_with_user_input(cluster_id, meaningful, user_input, lex_input, syn_input, sem_input):
+def update_json_with_user_input(cluster_id, meaningful,lex_input, syn_input, sem_input):
     try:
         with open(json_file_path, 'r') as file:
             data = json.load(file)
@@ -29,8 +29,6 @@ def update_json_with_user_input(cluster_id, meaningful, user_input, lex_input, s
                 data[cluster_id][-1]["Syntactic"] = syn_input
             if sem_input:
                 data[cluster_id][-1]["Semantic"] = sem_input
-
-            data[cluster_id][-1]["UserInput"] = user_input
 
         else:
             print(f"Error writing to JSON: Cluster ID {cluster_id} not found")
@@ -47,7 +45,7 @@ def load_next_cluster_data():
     while current_cluster_index < len(cluster_ids):
         current_cluster = cluster_ids[current_cluster_index]
         # Check if the current cluster data has a 'UserInput' key
-        if "UserInput" not in clusters_data[current_cluster][-1]:  # Assuming 'UserInput' would be in the last dict
+        if "Meaningful" not in clusters_data[current_cluster][-1]:  # Assuming 'UserInput' would be in the last dict
             load_cluster_data(current_cluster)
             break
         else:
@@ -97,14 +95,11 @@ def load_cluster_data(cluster_id):
 def on_enter_click():
     global current_cluster_index
     current_cluster = list(clusters_data.keys())[current_cluster_index]
-    user_text = user_input.get()
     lex_text = lex_input.get()
     syn_text = syn_input.get()
     sem_text = sem_input.get()
     meaningful = meaningful_answer.get()
-    print("User input to add to JSON:", user_text)
-    update_json_with_user_input(current_cluster, meaningful, user_text, lex_text, syn_text, sem_text)
-    user_input.delete(0, tk.END)
+    update_json_with_user_input(current_cluster, meaningful, lex_text, syn_text, sem_text)
     lex_input.delete(0, tk.END)
     syn_input.delete(0, tk.END)
     sem_input.delete(0, tk.END)
@@ -115,25 +110,12 @@ def on_enter_click():
 root = tk.Tk()
 root.title("Labelling Tool")
 
-# Create a top frame for user input
-top_frame = tk.Frame(root)
-top_frame.pack(fill=tk.X)
 
-# Label for the input
-input_label = tk.Label(top_frame, text="Cluster Context Input:")
-input_label.pack(side=tk.LEFT, padx=(10, 2), pady=10)
 
-# Entry widget for the input
-user_input = tk.Entry(top_frame)
-user_input.pack(side=tk.LEFT, expand=True, fill=tk.X, padx=(0, 10), pady=10)
-
-# Enter button next to the input
-enter_button = tk.Button(top_frame, text="Enter", command=lambda: print("Entered text:", user_input.get()))
-enter_button.pack(side=tk.LEFT, padx=(10, 0), pady=10)
 
 # Frame for the new textboxes
 questions_frame = tk.Frame(root)
-questions_frame.pack(fill=tk.X, before=top_frame)  # Ensure this frame is packed before the top_frame
+questions_frame.pack(fill=tk.X)  # Ensure this frame is packed before the top_frame
 
 # Lexicographic? Label and Textbox
 lex_label = tk.Label(questions_frame, text="Lexicographic?")
@@ -156,6 +138,11 @@ sem_input.pack(side=tk.LEFT, expand=False, fill=tk.X, padx=(0, 10), pady=10)
 # Frame for the meaningful question
 meaningful_frame = tk.Frame(root)
 meaningful_frame.pack(fill=tk.X, before=questions_frame)  # Ensure this frame is packed before the questions_frame
+
+
+# Enter button next to the input
+enter_button = tk.Button(questions_frame, text="Enter")
+enter_button.pack(side=tk.LEFT, padx=(10, 0), pady=10)
 
 # Label for the question
 meaningful_label = tk.Label(meaningful_frame, text="Is the cluster meaningful?")
@@ -218,7 +205,7 @@ style.configure("Treeview", font=customFont, rowheight=customFont.metrics("lines
 enter_button.config(command=on_enter_click)
 
 
-json_file_path = "Manas_Super_Cool_Clusters.json"
+json_file_path = "351-400.json"
 labels_file_path = "codetest2_test_unique.label"
 
 with open(json_file_path, "r") as jsonFile:
@@ -228,5 +215,3 @@ load_next_cluster_data();
 
 
 root.mainloop()
-
-
