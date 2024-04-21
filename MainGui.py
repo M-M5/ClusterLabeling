@@ -57,9 +57,8 @@ def load_next_cluster_data():
 
 def load_cluster_data(cluster_id):
     global current_cluster_index, clusters_data
-    print("Current cluster index: ", current_cluster_index)
-    # with (open(sentences_file_path, "r")) as sentencesFile:
-    #     sentences = sentencesFile.readlines()
+    print("Current cluster: ", cluster_id)
+
 
     with (open(labels_file_path, "r")) as labelsFile:
         label_lines = [line.strip().split() for line in labelsFile]
@@ -205,13 +204,17 @@ style.configure("Treeview", font=customFont, rowheight=customFont.metrics("lines
 enter_button.config(command=on_enter_click)
 
 
-json_file_path = "351-400.json"
+json_file_path = "merged_clusters.json"
 labels_file_path = "codetest2_test_unique.label"
 
 with open(json_file_path, "r") as jsonFile:
     clusters_data = json.load(jsonFile)
 
-load_next_cluster_data();
+# load_next_cluster_data();
+cluster_ids = list(clusters_data.keys())
+# print(cluster_ids)
+# print("Index value: ", cluster_ids.index('221'))
+load_cluster_data(cluster_ids[25])
 
 
 root.mainloop()
